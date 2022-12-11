@@ -12,7 +12,10 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +24,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: #20202A;
   }
 }
