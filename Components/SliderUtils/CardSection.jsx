@@ -4,8 +4,8 @@ import {styled} from '@mui/material'
 
 const CardItem=styled(Paper)(()=>({
     backgroundColor:'#2C2C39',
-    paddingTop:'30px',
-    marginBottom:'25px',
+    paddingTop:'20px',
+    marginBottom:'15px',
     '.image-container':{
         img:{
             width:'90px',

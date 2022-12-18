@@ -68,13 +68,16 @@ const SkillItem=styled(Box)(()=>({
 const DownloadCVItem=styled(Box)(()=>({
     display:'flex',
     alignItems:'center',
-    marginTop:'10px',
+    marginTop:'5px',
     padding:'5px 10px',
     color:'#fff',
     h3:{
-        marginRight:'10px',
+        marginRight:'50px',
     },
     '&:hover':{
         cursor:'pointer'
+    },
+    svg:{
+        paddingTop:'5px'
     }
 }))

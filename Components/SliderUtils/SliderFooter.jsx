@@ -20,7 +20,6 @@ const SliderFooterItem=styled(Box)(()=>({
   justifyContent:'space-between',
   alignItems:'center',
   padding:'0px 10px',
-  marginTop:'20px',
   svg:{
     color:'yellow'
   },
