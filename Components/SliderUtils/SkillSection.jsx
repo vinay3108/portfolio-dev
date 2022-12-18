@@ -1,6 +1,6 @@
 import { Box, styled } from '@mui/system'
 import React from 'react'
-import ProgressBar from './ProgressBar';
+import ProgressBar from '../GlobalUtils/ProgressBar';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const skillData=[
@@ -63,13 +63,15 @@ const SkillSection = () => {
 export default SkillSection
 const SkillItem=styled(Box)(()=>({
     color:'yellow',
+    padding:'0 10px'
+
 }))
 
 const DownloadCVItem=styled(Box)(()=>({
     display:'flex',
     alignItems:'center',
     marginTop:'5px',
-    padding:'5px 10px',
+    padding:'5px 0px',
     color:'#fff',
     h3:{
         marginRight:'50px',

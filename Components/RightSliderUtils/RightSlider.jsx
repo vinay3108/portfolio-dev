@@ -19,14 +19,14 @@ const rightSliderData=[
     {
         id:'3',
         icon:<AppRegistration/>,
-        name:'PortFolio',
-        path:'/portfolios' 
+        name:'Skills',
+        path:'/skills' 
     },
     {
         id:'4',
         icon:<Beenhere/>,
-        name:'Resume',
-        path:'/resume' 
+        name:'Projects',
+        path:'/projects' 
     },
     {
         id:'5',

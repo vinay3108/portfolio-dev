@@ -84,6 +84,9 @@ const DetailItem=styled(Box)(()=>({
 
             }
 
+        },
+        li:{
+            listStyle:'none',
         }
     }
 }))
