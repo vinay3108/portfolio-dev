@@ -1,8 +1,14 @@
 import React from 'react'
-
+import PrimaryHeading from '../../Components/GlobalUtils/PrimaryHeading'
+import ProjectButtons from '../../Components/ProjectUtils/ProjectButtons'
+import ProjectCard from '../../Components/ProjectUtils/ProjectCard'
 const index = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <PrimaryHeading name={'Projects'}/>
+      <ProjectButtons/>
+      <ProjectCard/>
+      </div>
   )
 }
 
