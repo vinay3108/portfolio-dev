@@ -1,11 +1,12 @@
 import { Box, styled } from '@mui/system'
 import React from 'react'
-import Image from 'next/image'
-import { Grid } from '@mui/material'
+
 
 const ProjectCardItem = () => {
+    const handleClick=()=>{
+    }
   return (
-    <ProjectCardItemStyled>
+    <ProjectCardItemStyled onClick={handleClick}>
        <div className='project-data'>
          hello
        </div>
@@ -16,9 +17,11 @@ const ProjectCardItem = () => {
 export default ProjectCardItem
 const ProjectCardItemStyled=styled(Box)(()=>({
     position:'relative',
+    border:'1px solid red',
     width:'250px',
     height:'250px',
     margin:'2rem 0.5rem',
+    transition:'all 1s ease-in',
     '&::before':{
         content:'""',
         position:'absolute',
@@ -29,18 +32,18 @@ const ProjectCardItemStyled=styled(Box)(()=>({
         backgroundColor:'red',
         opacity:'0.3',
         zIndex:'-1',
+        transition:'all 1s ease-in',
 
     },
     '.project-data':{
         display:'none',
-        transition:'all 0.4s ease-in',
-        
+        transition:'all 1s ease-in',
     }
     ,
     '&:hover':{
         '.project-data':{
             display:'block',
-            transform:'scale(1.1)'
+            transition:'all 1s ease-in',
         }
        
     }

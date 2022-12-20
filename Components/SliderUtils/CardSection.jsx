@@ -2,6 +2,19 @@ import React from 'react'
 import { Paper } from '@mui/material'
 import {styled} from '@mui/material'
 
+const CardSection = () => {
+  return (
+    <CardItem elevation={0}>
+        <div className='image-container'>
+            <img src="favicon.ico" alt="image" />
+            <h3>Vinay Kumar</h3>
+            <p>Full Stack Developer</p>
+        </div>
+    </CardItem>
+  )
+}
+
+export default CardSection
 const CardItem=styled(Paper)(()=>({
     backgroundColor:'#2C2C39',
     paddingTop:'20px',
@@ -25,16 +38,3 @@ const CardItem=styled(Paper)(()=>({
 
     }
 }))
-const CardSection = () => {
-  return (
-    <CardItem elevation={0}>
-        <div className='image-container'>
-            <img src="favicon.ico" alt="image" />
-            <h3>Vinay Kumar</h3>
-            <p>Full Stack Developer</p>
-        </div>
-    </CardItem>
-  )
-}
-
-export default CardSection
