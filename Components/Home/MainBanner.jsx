@@ -20,7 +20,7 @@ const ImageContainer=()=>{
     return(
         <ImageContainerItem>
            <Grid item xs={7} className="heading">
-                <h2>Discover My Amazing Space</h2>
+                <h2>Discover My Amazingg Space</h2>
                 <p>
                     &lt;
                     <span>code</span>&gt; i build
