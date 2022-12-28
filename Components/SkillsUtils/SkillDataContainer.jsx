@@ -28,12 +28,12 @@ const SkillDataComp=({type,name,icon})=>{
         <Grid container sx={{marginBottom:'2.5rem'}}>
         {
           skillData.filter((item)=>item.type===type).map((item)=>(
-            <>
-            <Grid item xs={5}>
+            <React.Fragment key={item.id}>
+            <Grid item xs={5} key={item.id}>
                 <ProgressBar name={item.name} percentage={item.percentage}/>
             </Grid>
             <Grid item xs={1}/>
-            </>
+            </React.Fragment>
           ))
         }
         </Grid>

@@ -44,16 +44,25 @@ const rightSliderData=[
 
 const RightSlider = () => {
     const [hamMenu,setHamMenu]=useState(true);
+    const[selectedOption,setSelectedOption]=useState('Home');
+    useEffect(()=>{
+        console.log(selectedOption);
+    },[selectedOption])
     const handleHam=(value)=>{
         setHamMenu(value);
     }
+    const handleOptions=(value)=>{
+        setSelectedOption(value);
+    }
+    
+
   return (
     <RightSliderItem>
         {
         hamMenu?
-        <RightSliderOpen handleHam={handleHam}/>
+        <RightSliderOpen handleHam={handleHam} handleOptions={handleOptions}/>
         :
-        <RightSliderClosed handleHam={handleHam}/>
+        <RightSliderClosed handleHam={handleHam} selectedItem={selectedOption}/>
         }
     </RightSliderItem>
   )
@@ -64,16 +73,16 @@ export default RightSlider
 
 const RightSliderClosed=(props)=>{
 
-    const [selectedItem,setSelectedItem]=useState('Home');
+    // const [selectedItem,setSelectedItem]=useState('Home');
     const handleChangeClosed=()=>{
-        props.handleHam(true);
-        
+        props.handleHam(true); 
     }
+   
     return (
         <RightSliderClosedItem>
             <div>
             <Menu onClick={handleChangeClosed}/>
-            <p>  {selectedItem}</p>
+            <p>  {props.selectedItem}</p>
             </div>
         </RightSliderClosedItem>
     )
@@ -81,10 +90,12 @@ const RightSliderClosed=(props)=>{
 
 
 const RightSliderOpen=(props)=>{
-    const [selectedMenu,setSelectedMenu]=useState('Home');
+    const [selectedMenu,setSelectedMenu]=useState('');
     const handleChange=(name)=>{
         setSelectedMenu(name);
         props.handleHam(false);
+        console.log(selectedMenu);
+        // props.handleOptions(selectedMenu);
     }
     return(
         <RightSliderOpenItem>
@@ -108,7 +119,8 @@ const RightSliderOpen=(props)=>{
 const RightSliderItem=styled(Box)(()=>({
     backgroundColor:'#2C2C39',
     height:'100vh',
-    transition:'all 0.4s linear'
+    transition:'all 0.4s linear',
+    color:'#fff',
 }))
 
 const RightSliderOpenItem=styled(Box)(()=>({
@@ -135,6 +147,7 @@ const RightSliderOpenItem=styled(Box)(()=>({
                 cursor:'pointer',
                 transform:'scale(1.1)',
                 transition: 'all 0.3s ease-out',
+                color:'yellow'
             }
         }
     }
