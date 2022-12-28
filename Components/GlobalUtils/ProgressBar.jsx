@@ -1,25 +1,6 @@
 import React from 'react'
 import { LinearProgress } from '@mui/material'
 import { Box, styled } from '@mui/system'
-const ProgressBarItem=styled(Box)(()=>({
-    display:'flex',
-    justifyContent:'space-between',
-    alignItems:'center',
-    width:'100%',
-    color:'#fff',
-    padding:'15px 0 5px 0',
-    '&:hover':{
-        cursor:'pointer'
-    },
-   h6:{
-    fontSize:'0.8rem',
-    
-   },
-   p:{
-    fontSize:'0.6rem',
-    opacity:'0.5',
-   }
-}))
 
 const ProgressBar = (props) => {
     const [progress, setProgress] = React.useState(0);
@@ -51,3 +32,22 @@ const ProgressBar = (props) => {
 }
 
 export default ProgressBar
+const ProgressBarItem=styled(Box)(()=>({
+  display:'flex',
+  justifyContent:'space-between',
+  alignItems:'center',
+  width:'100%',
+  color:'#fff',
+  padding:'1rem 0 0.5rem 0',
+  '&:hover':{
+      cursor:'pointer'
+  },
+ h5:{
+  fontSize:'1.2rem',
+  
+ },
+ p:{
+  fontSize:'0.88rem',
+  opacity:'0.5',
+ }
+}))

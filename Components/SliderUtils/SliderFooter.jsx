@@ -6,9 +6,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const SliderFooter = () => {
   return (
     <SliderFooterItem>
-      <LinkedInIcon/>
-      <GitHubIcon/>
-      <TwitterIcon/>
+    <LinkedInIcon/>
+    <GitHubIcon/>
+    <TwitterIcon/>
     </SliderFooterItem>
   )
 }
@@ -16,12 +16,14 @@ const SliderFooter = () => {
 export default SliderFooter
 const SliderFooterItem=styled(Box)(()=>({
   display:'flex',
+  height:'8vh',
   backgroundColor:'#2C2C39',
   justifyContent:'space-between',
   alignItems:'center',
   padding:'0px 10px',
   svg:{
-    color:'yellow'
+    color:'yellow',
+    fontSize:'2.2rem'
   },
   '&:hover':{
     cursor:'pointer'

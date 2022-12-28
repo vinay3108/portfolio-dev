@@ -125,8 +125,9 @@ const RightSliderOpenItem=styled(Box)(()=>({
             p:{
                 display:'flex',
                 alignItems:'center',
+                fontSize:'1.4rem',
                svg:{
-                fontSize:'15px',
+                fontSize:'1.8rem',
                 marginRight:'8px'
                }
             },

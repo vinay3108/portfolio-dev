@@ -75,10 +75,10 @@ const DetailItem=styled(Box)(()=>({
             padding:'5px 10px',
             h3:{
                 color:'#fff',
-                fontSize:'0.9rem'
+                fontSize:'1.2rem'
             },
             p:{
-                fontSize:'0.7rem',
+                fontSize:'1rem',
                 color:'#fff',
                 opacity:'0.5'
 

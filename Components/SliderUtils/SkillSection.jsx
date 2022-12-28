@@ -63,23 +63,25 @@ const SkillSection = () => {
 export default SkillSection
 const SkillItem=styled(Box)(()=>({
     color:'yellow',
-    padding:'0 10px'
+    padding:'1rem 0.8rem 0 0.8rem'
 
 }))
 
 const DownloadCVItem=styled(Box)(()=>({
     display:'flex',
     alignItems:'center',
-    marginTop:'5px',
-    padding:'5px 0px',
+    marginTop:'2rem',
+    fontSize:'1.3rem',
+    padding:'0.5rem 0px',
     color:'#fff',
     h3:{
-        marginRight:'50px',
+        marginRight:'3rem',
     },
     '&:hover':{
         cursor:'pointer'
     },
     svg:{
-        paddingTop:'5px'
+        paddingTop:'0.4rem',
+        fontSize:'2.4rem'
     }
 }))

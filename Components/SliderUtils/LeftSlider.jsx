@@ -5,19 +5,13 @@ import CardSection from './CardSection'
 import DetailSection from './DetailSection'
 import SkillSection from './SkillSection'
 import SliderFooter from './SliderFooter'
-const Item=styled(Paper)(({theme})=>({
-    // backgroundColor:theme.palette.mode==='dark'? '#1A2027':'#fff',
-    textAlign:'center',
-    height:'100vh',
-    // border:'1px solid red',
-    backgroundColor:'#2C2C39'
-}))
+
 
 const LeftSlider = () => {
   return (
     <Item>
       <CardSection/>
-      <Box sx={{backgroundColor:'#191d2b'}}>
+      <Box sx={{backgroundColor:'#191d2b',height:'60vh'}}>
       <DetailSection/>
       <SkillSection/>
       </Box>
@@ -27,3 +21,8 @@ const LeftSlider = () => {
 }
 
 export default LeftSlider
+const Item=styled(Paper)(({theme})=>({
+  textAlign:'center',
+  height:'100vh',
+  backgroundColor:'#2C2C39'
+}))
