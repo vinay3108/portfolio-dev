@@ -18,20 +18,29 @@ const ContactCard = ({icon,name,value}) => {
 export default ContactCard
 const ContactCardStyled=styled(Box)(()=>({
     display:'flex',
+    alignItems:'center',
     backgroundColor:'#2C2C39',
-    border:'1px solid #8C8C8E',
     marginBottom:'50px',
+    color:'#fff',
     '&:hover':{
         cursor:'pointer',
     },
    '.icon-data':{
+    marginRight:'20px',
     span:{
-
         display:'flex',
         alignItem:'center',
         justifyContent:'center',
         height:'50px',
-        width:'50px'
+        width:'50px',
+        svg:{
+            margin:'5px auto',
+            width:'40px',
+            height:'40px',
+            border:'1px solid rgba(255,255,0,0.3)',
+            borderRadius:'4px',
+            
+        }
     },
 } 
 }))
