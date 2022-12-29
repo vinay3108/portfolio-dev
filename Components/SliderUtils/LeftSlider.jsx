@@ -11,7 +11,7 @@ const LeftSlider = () => {
   return (
     <Item>
       <CardSection/>
-      <Box sx={{backgroundColor:'#191d2b',height:'60vh'}}>
+      <Box sx={{backgroundColor:'#191d2b',height:'60%'}}>
       <DetailSection/>
       <SkillSection/>
       </Box>
@@ -23,6 +23,6 @@ const LeftSlider = () => {
 export default LeftSlider
 const Item=styled(Paper)(({theme})=>({
   textAlign:'center',
-  height:'100vh',
+  height:'100%',
   backgroundColor:'#2C2C39'
 }))

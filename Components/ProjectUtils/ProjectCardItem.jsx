@@ -19,7 +19,7 @@ const ProjectCardItemStyled=styled(Box)(()=>({
     position:'relative',
     border:'1px solid red',
     width:'250px',
-    height:'250px',
+    height:'25%',
     margin:'2rem 0.5rem',
     transition:'all 1s ease-in',
     '&::before':{

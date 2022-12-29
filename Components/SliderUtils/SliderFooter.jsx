@@ -16,7 +16,7 @@ const SliderFooter = () => {
 export default SliderFooter
 const SliderFooterItem=styled(Box)(()=>({
   display:'flex',
-  height:'8vh',
+  height:'5%',
   backgroundColor:'#2C2C39',
   justifyContent:'space-between',
   alignItems:'center',

@@ -37,7 +37,7 @@ const MainBannerItem=styled(Box)(()=>({
 }))
 
 const ImageContainerItem=styled(Box)(()=>({
-    height:'49vh',
+    height:'49%',
     position:'relative',
     '.heading':{
         padding:'20px 0 0 20px',

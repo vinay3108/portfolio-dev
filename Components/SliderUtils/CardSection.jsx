@@ -18,7 +18,7 @@ export default CardSection
 const CardItem=styled(Paper)(()=>({
     backgroundColor:'#2C2C39',
     paddingTop:'20px',
-    height:'30vh',
+    height:'30%',
     marginBottom:'15px',
     '.image-container':{
         img:{

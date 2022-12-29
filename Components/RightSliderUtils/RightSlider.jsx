@@ -45,9 +45,6 @@ const rightSliderData=[
 const RightSlider = () => {
     const [hamMenu,setHamMenu]=useState(true);
     const[selectedOption,setSelectedOption]=useState('Home');
-    useEffect(()=>{
-        console.log(selectedOption);
-    },[selectedOption])
     const handleHam=(value)=>{
         setHamMenu(value);
     }
@@ -77,12 +74,11 @@ const RightSliderClosed=(props)=>{
     const handleChangeClosed=()=>{
         props.handleHam(true); 
     }
-   
     return (
         <RightSliderClosedItem>
             <div>
-            <Menu onClick={handleChangeClosed}/>
-            <p>  {props.selectedItem}</p>
+            <Menu style={{marginBottom:'80px'}} onClick={handleChangeClosed} />
+            <p>  {props.selectedItem.toUpperCase()}</p>
             </div>
         </RightSliderClosedItem>
     )
@@ -90,12 +86,11 @@ const RightSliderClosed=(props)=>{
 
 
 const RightSliderOpen=(props)=>{
-    const [selectedMenu,setSelectedMenu]=useState('');
+    const [selectedMenu,setSelectedMenu]=useState('Home');
     const handleChange=(name)=>{
         setSelectedMenu(name);
         props.handleHam(false);
-        console.log(selectedMenu);
-        // props.handleOptions(selectedMenu);
+        props.handleOptions(name);
     }
     return(
         <RightSliderOpenItem>
@@ -118,7 +113,7 @@ const RightSliderOpen=(props)=>{
 
 const RightSliderItem=styled(Box)(()=>({
     backgroundColor:'#2C2C39',
-    height:'100vh',
+    height:'100%',
     transition:'all 0.4s linear',
     color:'#fff',
 }))
@@ -169,7 +164,7 @@ const RightSliderClosedItem=styled(Box)(()=>({
             }
         },
         p:{
-            marginTop:'50px',
+            
             fontSize:'2.5rem',
             transform:'rotate(90deg)',
         }
