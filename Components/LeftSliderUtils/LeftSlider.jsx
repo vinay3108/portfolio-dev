@@ -5,15 +5,16 @@ import CardSection from './CardSection'
 import DetailSection from './DetailSection'
 import SkillSection from './SkillSection'
 import SliderFooter from './SliderFooter'
-
+import DowloadCv from './DownloadCv'
 
 const LeftSlider = () => {
   return (
     <Item>
       <CardSection/>
-      <Box sx={{backgroundColor:'#191d2b',height:'60%'}}>
+      <Box sx={{backgroundColor:'#191d2b', height:'60vh',display:'flex',flexDirection:'column',justifyContent:'space-evenly',}}>
       <DetailSection/>
       <SkillSection/>
+      <DowloadCv/>
       </Box>
       <SliderFooter/>
     </Item>
@@ -23,6 +24,9 @@ const LeftSlider = () => {
 export default LeftSlider
 const Item=styled(Paper)(({theme})=>({
   textAlign:'center',
-  height:'100%',
+  height:'100vh',
+  display:'flex',
+  flexDirection:'column',
+  justifyContent:'space-between',
   backgroundColor:'#2C2C39'
 }))

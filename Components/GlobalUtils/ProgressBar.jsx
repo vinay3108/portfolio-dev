@@ -38,7 +38,7 @@ const ProgressBarItem=styled(Box)(()=>({
   alignItems:'center',
   width:'100%',
   color:'#fff',
-  padding:'1rem 0 0.5rem 0',
+  padding:'0.8rem 0',
   '&:hover':{
       cursor:'pointer'
   },

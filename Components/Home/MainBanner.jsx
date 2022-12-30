@@ -38,7 +38,7 @@ const MainBannerItem=styled(Box)(()=>({
 }))
 
 const ImageContainerItem=styled(Box)(()=>({
-    height:'490px',
+    height:'1500px',
     position:'relative',
 
     '.heading':{
@@ -69,7 +69,7 @@ const ImageContainerItem=styled(Box)(()=>({
         width:'100%',
         objectFit: 'cover',
         background:`linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/images/headerpic6.png')`,
-        top:'5%',
+        top:'0%',
         left:'0',
         zIndex:'-1'
 

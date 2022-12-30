@@ -113,7 +113,7 @@ const RightSliderOpen=(props)=>{
 
 const RightSliderItem=styled(Box)(()=>({
     backgroundColor:'#2C2C39',
-    height:'100%',
+    height:'100vh',
     transition:'all 0.4s linear',
     color:'#fff',
 }))
