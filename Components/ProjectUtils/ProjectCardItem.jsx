@@ -1,27 +1,35 @@
 import { Box, styled } from '@mui/system'
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import React from 'react'
 
-
-const ProjectCardItem = () => {
+const ProjectCardItem = (props) => {
     const handleClick=()=>{
+      console.log("i am clicked");
     }
   return (
-    <ProjectCardItemStyled onClick={handleClick}>
+    <ProjectCardItemStyled onClick={handleClick} image={props.image}>
        <div className='project-data'>
-         hello
+        <span id='readme'> Read More <NavigateNextIcon/></span>
+        <div className='project-data-content'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure quod repellendus fuga animi explicabo provident, deleniti maxime praesentium aliquam qui odit totam eum quisquam laborum dolorem, excepturi dolor, sapiente tempore similique doloribus adipisci.</p>
+        </div>
        </div>
     </ProjectCardItemStyled>
   )
 }
 
 export default ProjectCardItem
-const ProjectCardItemStyled=styled(Box)(()=>({
+const ProjectCardItemStyled=styled(Box)((props)=>({
     position:'relative',
     border:'1px solid red',
-    width:'250px',
-    height:'25%',
+    width:'300px',
+    height:'350px',
     margin:'2rem 0.5rem',
     transition:'all 1s ease-in',
+    '#readme':{
+      display:'flex',
+      alignItems:'center',
+    },
     '&::before':{
         content:'""',
         position:'absolute',
@@ -29,8 +37,11 @@ const ProjectCardItemStyled=styled(Box)(()=>({
         left:'0',
         height:'100%',
         width:"100%",
-        backgroundColor:'red',
-        opacity:'0.3',
+        // backgroundColor:'red',
+        // backgroundColor:`${props.image}`,
+        backgroundImage:`url(${props.image})`,
+        // backgroundImage:`url(${p11})`,
+        // opacity:'0.3',
         zIndex:'-1',
         transition:'all 1s ease-in',
 
@@ -38,12 +49,38 @@ const ProjectCardItemStyled=styled(Box)(()=>({
     '.project-data':{
         display:'none',
         transition:'all 1s ease-in',
+        position:'absolute',
+        left:'5%',
+        bottom:'5%'
+    },
+    '.project-data-content':{
+      display:'none',
+      transition:'all 2s ease-in',
+      width:'100%',
+      '&:hover':{
+        display:'block',
+      }
     }
     ,
+    '&:hover::before':{
+      opacity:'0.3',
+      background:`linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(${props.image})`,
+      zIndex:'-1',
+    },
     '&:hover':{
+      cursor:'pointer',
         '.project-data':{
             display:'block',
-            transition:'all 1s ease-in',
+            // cursor:'pointer',
+            '&:hover':{
+              '.project-data-content':{
+                display:'block',
+                color:'green'
+              },
+              '#readme':{
+                opacity:0
+              }
+            }
         }
        
     }

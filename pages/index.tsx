@@ -6,7 +6,7 @@ const index = () => {
   return (
     <>
     <Box sx={{ flexGrow: 1 }}>
-        <Grid item xs={12}>
+        <Grid item lg={12} md={8} xs={12} style={{margin:'0 auto'}}>
          <MainBanner/>
         </Grid>
     </Box>

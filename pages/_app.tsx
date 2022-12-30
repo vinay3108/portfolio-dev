@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import {Grid,Box, Typography, styled} from '@mui/material';
+import {Grid,Box} from '@mui/material';
 import LeftSlider from '../Components/SliderUtils/LeftSlider';
 import RightSlider from '../Components/RightSliderUtils/RightSlider';
 
@@ -9,10 +9,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return<>
   <Box sx={{ flexGrow: 1}}>
       <Grid container >
-        <Grid item md={3} sx={{position:'fixed', width:'300px',height:"100%"}}  display={{ xs: "none", md: "block" }} >
+        <Grid item lg={3} sx={{position:'fixed', width:'300px',height:"100%"}}  display={{ md: "none", lg: "block" }} >
          <LeftSlider/>
         </Grid>
-        <Grid item xs={2.3}/>
+        <Grid item lg={2.3} display={{ md: "none", lg: "block" }}/>
         <Grid item  width={'70%'}>
         <Component {...pageProps}  />
         </Grid>
