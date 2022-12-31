@@ -5,7 +5,7 @@ import React from 'react'
 
 const SkillsCard = () => {
   return (
-    <SkillsCardItem>
+    <SkillsCardItem >
         <h2>Web Development</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, possimus nesciunt voluptatum minima sit cum face</p>
         <Button>Contact Me <NavigateNextIcon/></Button>
@@ -16,6 +16,7 @@ const SkillsCard = () => {
 export default SkillsCard
 const SkillsCardItem=styled(Box)(()=>({
     width:'30%',
+    margin:'0.5rem',
     backgroundColor:'#2C2C39',
     padding:'1rem',
     transition:'all 1s ease-in',
@@ -36,6 +37,13 @@ const SkillsCardItem=styled(Box)(()=>({
                 transform:'translateX(4px)'
             }
         }
+    },
+    '@media screen and (max-width:864px)':{
+       width:'45%'
+    },
+    '@media screen and (max-width:692px)':{
+       width:'90%',
+       textAlign:'center'
     }
         
 }))

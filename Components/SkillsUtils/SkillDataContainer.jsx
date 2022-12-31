@@ -25,12 +25,12 @@ const SkillDataComp=({type,name,icon})=>{
          <div className='heading'>
             <h2><span>{icon} </span>{name}</h2>
         </div>   
-        <Grid container sx={{marginBottom:'2.5rem'}}>
+        <Grid container sx={{marginBottom:'2.5rem',color:'yellow'}}>
         {
           skillData.filter((item)=>item.type===type).map((item)=>(
             <React.Fragment key={item.id}>
             <Grid item xs={5} key={item.id}>
-                <ProgressBar name={item.name} percentage={item.percentage}/>
+                <ProgressBar name={item.name} percentage={item.percentage} colorr={"#dcdbc8"}/>
             </Grid>
             <Grid item xs={1}/>
             </React.Fragment>
@@ -50,6 +50,8 @@ const SkillDataCompStyled=styled(Box)(()=>({
 
             display:'flex',
             alignItem:'center',
+            color:'#fff',
+            fontSize:'2rem',
             // justifyContent:'center',
             svg:{
                 fontSize:"2.4rem"

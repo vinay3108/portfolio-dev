@@ -22,7 +22,7 @@ const ProgressBar = (props) => {
     }, []);
   return (
     <>
-    <ProgressBarItem>
+    <ProgressBarItem colorr={props.colorr}>
         <h5>{props.name}</h5>
         <p>{props.percentage}</p>
     </ProgressBarItem>
@@ -32,7 +32,7 @@ const ProgressBar = (props) => {
 }
 
 export default ProgressBar
-const ProgressBarItem=styled(Box)(()=>({
+const ProgressBarItem=styled(Box)((props)=>({
   display:'flex',
   justifyContent:'space-between',
   alignItems:'center',
@@ -44,7 +44,7 @@ const ProgressBarItem=styled(Box)(()=>({
   },
  h5:{
   fontSize:'1.2rem',
-  
+  color:`${props.colorr?props.colorr:'#fff'}`
  },
  p:{
   fontSize:'0.88rem',

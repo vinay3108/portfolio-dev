@@ -43,7 +43,7 @@ const rightSliderData=[
 ]
 
 const RightSlider = () => {
-    const [hamMenu,setHamMenu]=useState(true);
+    const [hamMenu,setHamMenu]=useState(false);
     const[selectedOption,setSelectedOption]=useState('Home');
     const [openWindow,setOpenWindow]=useState("100%");
     const handleHam=(value)=>{
@@ -54,9 +54,7 @@ const RightSlider = () => {
     }
     useEffect(()=>{
         hamMenu?setOpenWindow('100%'):setOpenWindow('60%');
-        console.log(openWindow);
-
-    },[hamMenu,openWindow])
+    },[hamMenu])
     
 
   return (

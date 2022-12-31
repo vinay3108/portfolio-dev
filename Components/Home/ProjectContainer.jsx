@@ -25,7 +25,7 @@ const ProjectContainer = () => {
 }
 
 export default ProjectContainer
-const ProjectContainerItem=styled(Box)(()=>({
+const ProjectContainerItem=styled(Box)(()=>({ 
     '.project-heading':{
         marginTop:'2rem',
         display:'flex',
@@ -49,7 +49,6 @@ const ProjectContainerItem=styled(Box)(()=>({
         width:'100%',
         display:'flex',
         justifyContent:'space-between',
-        flexWrap:'wrap',
         div:{
             '&:hover':{
                 transform:'scale(1.05)'
@@ -83,6 +82,22 @@ const ProjectContainerItem=styled(Box)(()=>({
                 transform:`translateX(2px)`
             }
           }
-    }
+    },
+    '@media screen and (max-width:898px)':{
+      '.project-card-wrapper':{
+        flexWrap:'wrap'
+      }
+  },
+    '@media screen and (max-width:692px)':{
+      '.project-heading':{
+        justifyContent:'center'
+      },
+      '.project-card-wrapper':{
+        justifyContent:'center'
+      },
+      '.explore-btn':{
+        margin:"0 50px 1rem 50px"
+      }
+  }
 
 }))

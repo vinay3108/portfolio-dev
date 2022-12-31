@@ -9,7 +9,7 @@ const ImageContainer = () => {
       });
     return(
         <ImageContainerItem>
-           <Grid item xs={7} className="heading">
+           <Grid item lg={7} md={11} xs={12} className="heading">
                 <h2>Discover My Amazing Space</h2>
                 <p>
                     &lt;
@@ -35,9 +35,10 @@ const ImageContainerItem=styled(Box)(()=>({
         top:'30%',
         padding:'20px 0 0 20px',
         display:'flex',
+
         flexDirection:'column',
         justifyContent:'center',
-        width:'50%',
+        // width:'50%',
         color:'#fff',
         h2:{
             
@@ -62,5 +63,14 @@ const ImageContainerItem=styled(Box)(()=>({
         left:'0',
         zIndex:'0'
 
-      }
+      },
+      '@media screen and (max-width:400px)':{
+        '.heading':{
+          top:'15%',
+          padding:'20px',
+          p:{
+            fontSize:'1.2rem'
+          }
+        }
+    }
 }))
