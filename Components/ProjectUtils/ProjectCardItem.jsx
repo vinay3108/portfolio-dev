@@ -7,7 +7,7 @@ const ProjectCardItem = (props) => {
       console.log("i am clicked");
     }
   return (
-    <ProjectCardItemStyled onClick={handleClick} image={props.image}>
+    <ProjectCardItemStyled onClick={handleClick} image={props.image} widthh={props.widthh}  heightt={props.heightt}>
        <div className='project-data'>
         <span id='readme'> Read More <NavigateNextIcon/></span>
         <div className='project-data-content'>
@@ -21,9 +21,9 @@ const ProjectCardItem = (props) => {
 export default ProjectCardItem
 const ProjectCardItemStyled=styled(Box)((props)=>({
     position:'relative',
-    border:'1px solid red',
-    width:'300px',
-    height:'350px',
+    // border:'1px solid red',
+    width:`${props.widthh?props.widthh:'300px'}`,
+    height:`${props.heightt?props.heightt:'350px'}`,
     margin:'2rem 0.5rem',
     transition:'all 1s ease-in',
     '#readme':{
@@ -41,8 +41,9 @@ const ProjectCardItemStyled=styled(Box)((props)=>({
         // backgroundColor:`${props.image}`,
         backgroundImage:`url(${props.image})`,
         // backgroundImage:`url(${p11})`,
-        // opacity:'0.3',
-        zIndex:'-1',
+        opacity:'1',
+        zIndex:'0',
+        borderRadius:'8px',
         transition:'all 1s ease-in',
 
     },
@@ -63,9 +64,9 @@ const ProjectCardItemStyled=styled(Box)((props)=>({
     }
     ,
     '&:hover::before':{
-      opacity:'0.3',
+      opacity:'0.8',
       background:`linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(${props.image})`,
-      zIndex:'-1',
+      zIndex:'-0',
     },
     '&:hover':{
       cursor:'pointer',

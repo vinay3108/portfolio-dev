@@ -46,7 +46,6 @@ export default SkillSection
 const SkillItem=styled(Box)(()=>({
     color:'yellow',
     display:'flex',
-    // border:'1px solid blue',
     flexDirection:'column',
     justifyContent:'space-beween',
     padding:'1rem 0.8rem 0 0.8rem'

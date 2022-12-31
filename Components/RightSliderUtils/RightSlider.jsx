@@ -114,11 +114,12 @@ const RightSliderOpen=(props)=>{
 const RightSliderItem=styled(Box)(()=>({
     backgroundColor:'#2C2C39',
     height:'100vh',
-    transition:'all 0.4s linear',
+    transition:'all 1s linear',
     color:'#fff',
 }))
 
 const RightSliderOpenItem=styled(Box)(()=>({
+    transition:'all 1s linear',
     ul:{
         listStyle:'none',
         display:'flex',
@@ -149,8 +150,8 @@ const RightSliderOpenItem=styled(Box)(()=>({
 }))
 
 const RightSliderClosedItem=styled(Box)(()=>({
+    transition:'all 1s linear',
     div:{
-
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
