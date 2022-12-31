@@ -26,6 +26,7 @@ const EducationUtilStyled = styled(Box)(()=>({
     width: '20%',
     paddingLeft: '20px',
     /* border: 1px solid red, */
+    color:'#fff',
     position: 'relative',
     '&::before ':{
       content: '""',
@@ -63,20 +64,24 @@ const EducationUtilStyled = styled(Box)(()=>({
       top: '20px',
       width: '4rem',
       height: '2px',
-      backgroundColor: 'red',
+      backgroundColor: '#6e6e79',
       '@media all and (max-width: 950px)': {
         width: '2rem',
         left: '1rem',
       }
     },
     h5 :{
-      color: 'blue',
+      color: '#fff',
       fontSize: '2rem',
       paddingBottom: '0.4rem',
     },
     h6: {
       paddingBottom: '0.6rem',
       fontSize: '1.8rem',
+      color:'#6e6e79'
+    },
+    p:{
+      color:'yellow'
     }
   },
   '@media all and (max-width: 1150px)': {

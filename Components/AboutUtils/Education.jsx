@@ -55,6 +55,7 @@ const EductionStyledWrapper=styled(Box)(()=>({
     marginTop:'4rem',
     '.heading':{
         // paddingLeft:'-20px',
+        color:'#fff',
         display:'flex',
         alignItems:'center',
         fontSize:'1.7rem',
@@ -69,4 +70,5 @@ const EducationStyled=styled(Box)(()=>({
     paddingLeft:'20px',
     borderRadius:'5px',
     marginTop:'1rem',
+    marginLeft:'1rem',
 }))

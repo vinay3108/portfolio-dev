@@ -1,30 +1,41 @@
 import React from 'react'
 import ProjectCardItem from './ProjectCardItem'
-import { Grid } from '@mui/material'
+import { Grid,Box,styled } from '@mui/material'
 const p1='/images/headerpic2.png'
 
 const ProjectCard = () => {
   return (
-    <div style={{display:'flex',}}>
-        <Grid container>
-            <Grid item lg={4} xs={6}>
+    <ProjectCardStyled>
+        <Grid container  lg={12} >
+            <Grid item lg={4} xs={12} sm={6} className='wrapper'>
                 <ProjectCardItem image={p1}/>
             </Grid>
-            <Grid item lg={4} xs={6}>
+            <Grid item lg={4} xs={12} sm={6} className='wrapper'>
                 <ProjectCardItem image={p1}/>
             </Grid>
-            <Grid item lg={4} xs={6}>
+            <Grid item lg={4} xs={12} sm={6} className='wrapper'>
                 <ProjectCardItem image={p1}/>
             </Grid>
-            <Grid item lg={4} xs={6}>
+            <Grid item lg={4} xs={12} sm={6} className='wrapper'>
                 <ProjectCardItem image={p1}/>
             </Grid>
-            <Grid item lg={4} xs={6}>
+            <Grid item lg={4} xs={12} sm={6} className='wrapper'>
                 <ProjectCardItem image={p1}/>
             </Grid>
         </Grid>
-    </div>
+    </ProjectCardStyled>
   )
 }
 
 export default ProjectCard
+
+const ProjectCardStyled=styled(Box)(()=>({
+    display:'flex',
+    '.wrapper':{
+        '@media all and (max-width: 678px)': {
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
+          }
+    }
+}))

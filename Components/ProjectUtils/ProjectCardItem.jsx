@@ -23,7 +23,7 @@ const ProjectCardItemStyled=styled(Box)((props)=>({
     position:'relative',
     // border:'1px solid red',
     width:`${props.widthh?props.widthh:'300px'}`,
-    height:`${props.heightt?props.heightt:'350px'}`,
+    height:`${props.heightt?props.heightt:'250px'}`,
     margin:'2rem 0.5rem',
     transition:'all 1s ease-in',
     '#readme':{

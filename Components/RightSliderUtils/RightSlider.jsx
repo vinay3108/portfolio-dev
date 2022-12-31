@@ -73,7 +73,6 @@ export default RightSlider
 
 
 const RightSliderClosed=(props)=>{
-
     // const [selectedItem,setSelectedItem]=useState('Home');
     const handleChangeClosed=()=>{
         props.handleHam(true); 

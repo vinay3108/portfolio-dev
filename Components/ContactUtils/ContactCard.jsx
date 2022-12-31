@@ -20,7 +20,8 @@ const ContactCardStyled=styled(Box)(()=>({
     display:'flex',
     alignItems:'center',
     backgroundColor:'#2C2C39',
-    marginBottom:'50px',
+    margin:'0rem 1rem 1rem 1rem',
+    padding:'1rem',
     color:'#fff',
     '&:hover':{
         cursor:'pointer',

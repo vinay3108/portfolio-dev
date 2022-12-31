@@ -17,6 +17,7 @@ const ProjectButtons = () => {
 export default ProjectButtons
 const ProjectButtonsStyled=styled(Box)(()=>({
     display:'flex',
-    justifyContent:'space-evenly',
+    justifyContent:'center',
     alignItems:'center',
+    flexWrap:'wrap'
 }))

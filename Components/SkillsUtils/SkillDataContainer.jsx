@@ -29,7 +29,7 @@ const SkillDataComp=({type,name,icon})=>{
         {
           skillData.filter((item)=>item.type===type).map((item)=>(
             <React.Fragment key={item.id}>
-            <Grid item xs={5} key={item.id}>
+            <Grid item xs={12} sm={5} key={item.id}>
                 <ProgressBar name={item.name} percentage={item.percentage} colorr={"#dcdbc8"}/>
             </Grid>
             <Grid item xs={1}/>
@@ -64,5 +64,5 @@ const SkillDataCompStyled=styled(Box)(()=>({
     },
     h2:{
         margin:'10px 0'
-    }
+    },
 }))

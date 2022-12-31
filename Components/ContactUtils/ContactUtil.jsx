@@ -9,10 +9,10 @@ const ContactUtil = () => {
   return (
     <ContactUtilStyled>
         <Grid container sx={{display:'flex'}} spacing={4}>
-            <Grid item xs={5}>
+            <Grid item md={8}xs={12}>
                 <ContactForm/>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item  md={3}xs={12} sx={{display:'flex',justifyContent:'space-between',flexWrap:'wrap'}}>
                 <ContactCard name={"Phone"} icon={<Phone/>}  value={"9891428199"}/>
                 <ContactCard name={"Email"} icon={<Phone/>}  value={"9891428199"}/>
                 <ContactCard name={"LinkedIn"} icon={<Phone/>}  value={"9891428199"}/>
