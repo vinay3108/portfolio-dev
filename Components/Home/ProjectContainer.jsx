@@ -13,8 +13,9 @@ const ProjectContainer = () => {
         <span><PrecisionManufacturing/>Projects</span>
         </Box>
         <Box className='project-card-wrapper'>
-        <ProjectCardItem image={image1} widthh={'550px'} heightt={'250px'}/>
-        <ProjectCardItem image={image1} widthh={'550px'} heightt={'250px'}/>
+        <ProjectCardItem image={image1} widthh={'300px'} heightt={'250px'}/>
+        <ProjectCardItem image={image1} widthh={'300px'} heightt={'250px'}/>
+        <ProjectCardItem image={image1} widthh={'300px'} heightt={'250px'}/>
         </Box>
         <Link href={'/projects'}>
         <Button className='explore-btn'>Explore More <NavigateNext/></Button>
