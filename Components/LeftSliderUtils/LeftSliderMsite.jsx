@@ -27,12 +27,6 @@ export default LeftSliderMsite
 const LeftSliderMsiteStyled=styled(Box)(()=>({
     height:'100vh',
     zIndex:'100',
-    svg:{
-        position:'absolute',
-        top:'1%',
-        color:'#fff',
-        fontSize:'2rem'
-    },
     '.icon-wrapper':{
         width:'50px',
         height:'50px',

@@ -56,6 +56,8 @@ const RightSliderOpen=(props)=>{
 }
 const RightSliderOpenItem=styled(Box)(()=>({
     transition:'all 1s linear',
+    backgroundColor:'#2C2C39',
+    height:'100vh',
     '.icon-container':{
         display:'flex',
         justifyContent:'center',
