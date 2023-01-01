@@ -24,9 +24,14 @@ const LeftSlider = () => {
 export default LeftSlider
 const Item=styled(Paper)(({theme})=>({
   textAlign:'center',
+  position:'relative',
   height:'100vh',
   display:'flex',
+  width:'100%',
   flexDirection:'column',
   justifyContent:'space-between',
-  backgroundColor:'#2C2C39'
+  backgroundColor:'#191d2b',
+  svg:{
+    position:'relative',
+  }
 }))
