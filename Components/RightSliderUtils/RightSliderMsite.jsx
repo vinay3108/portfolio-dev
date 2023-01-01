@@ -42,7 +42,7 @@ const RightSliderOpen=(props)=>{
         {
             rightSliderData.map((item)=>(
                 <li key={item.id}>
-                    <div className='p-wrapper'>
+                    <div className='p-wrapper' onClick={props.handleToggle}>
                         <Link href={item.path}>
                         <p ><span>{item.icon}</span>{item.name}</p>
                         </Link>
